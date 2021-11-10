@@ -1,38 +1,123 @@
 .App {
+  display: flex;
   text-align: center;
+  background-color: red;
+  font-family: 'Arial', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar {
+  background-color: #062849;
+  padding-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar svg {
+  width: 100px;
+  padding-top: 10px;
+  padding-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.body {
+  display: flex;
+  flex-direction: row;
+  background-color: #F5F8FA;
+  justify-content: space-evenly;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+.overview {
+  background-color: #fff;
+  width: 250px;
+  margin: 10px;
+  margin-top: 40px;
+  margin-left: 20px;
+  padding-top: 30px;
+  position: static;
+}
+
+img {
+  display: flex;
+  width: 100px;
+  align-self: center;
+}
+
+.infographics {
+  background-color: #fff;
+  width: 550px;
+  margin: 10px;
+  margin-top: 40px;
+  flex-grow: 2;
+  position: relative;
+}
+
+.product-info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+.product-info-title {
+  margin: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.product-info-subtitle {
+  color: #a2a5a5;
+  padding: 10px;
+  margin: 25px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 11px;
+  text-align: center;
+}
+
+.product-tags {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px solid #e2e3e4;
+  border-bottom: 1px  solid #e2e3e4;
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 10px;  
+}
+
+li {
+  margin: 5px;
+  margin-left: 0px;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #e2e3e4;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+h2 {
+  padding-left: 10px;
+  color: #516172;
+}
+
+.button-list {
+  display: flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  margin: 20px;
+}
+
+.blue {
+  background-color: #062849;
+  color: #fff;
+}
+
+button {
+  border-radius: 10px;
+  border: none;
 }
