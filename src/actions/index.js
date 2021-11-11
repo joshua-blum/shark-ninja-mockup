@@ -46,3 +46,8 @@ export const greyRetailerMargin = () => {
     }
 }
 
+export const productOverview = () => {
+    return {
+        type: 'PRODUCT_OVERVIEW'
+    }
+}
